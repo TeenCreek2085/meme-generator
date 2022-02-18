@@ -1,0 +1,101 @@
+/* == Header == */
+
+.header {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  padding: 19px;
+  margin-bottom: 36px;
+}
+
+.header__text {
+  margin: 0;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+}
+
+/* == Main == */
+
+.main__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.main__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 17px;
+}
+
+.main__input {
+  padding: 11px;
+  color: #0d0d0d;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.main__btn {
+  grid-column: span 2;
+  padding: 11px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.main__btn:hover,
+.main__btn:active {
+  background: linear-gradient(90.41deg, #6b058d 1.14%, #620381 100%);
+}
+
+.meme {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+}
+
+.meme__img {
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.meme__text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme__text--bottom {
+  bottom: 5%;
+}
+
+.meme__text--top {
+  top: 5%;
+}
